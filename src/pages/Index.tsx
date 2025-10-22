@@ -57,12 +57,29 @@ const Index = () => {
             <div className="inline-block bg-purple-600/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-3">
               ✨ Новинка 2025
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg mb-3">
               Sora AI
             </h1>
-            <p className="text-xl md:text-2xl mt-2 text-purple-100">
+            <p className="text-xl md:text-2xl mb-6 text-purple-100">
               Создавайте видео из текста за минуты
             </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="text-lg px-8 py-6 border-2 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
+                onClick={() => window.open('https://sora.chatgpt.com', '_blank')}
+              >
+                🌐 Попробовать на сайте
+              </Button>
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-lg"
+                onClick={() => window.open('https://t.me/your_bot', '_blank')}
+              >
+                🤖 Перейти в бот
+              </Button>
+            </div>
           </div>
         </div>
 
@@ -70,24 +87,6 @@ const Index = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
             Sora — нейросеть для создания видео от OpenAI: как получить доступ и пользоваться
           </h1>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="text-lg px-8 py-6 border-2"
-              onClick={() => window.open('https://sora.chatgpt.com', '_blank')}
-            >
-              🌐 Попробовать на сайте
-            </Button>
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
-              onClick={() => window.open('https://t.me/your_bot', '_blank')}
-            >
-              🤖 Перейти в бот
-            </Button>
-          </div>
 
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             Искусственный интеллект стремительно меняет индустрию создания контента, и нейросеть Sora от OpenAI — один из самых ярких примеров этой революции. Представьте: вы вводите текстовое описание, и через несколько минут получаете реалистичное видео, которое раньше потребовало бы часов профессиональной работы. Звучит фантастически? Это уже реальность.
