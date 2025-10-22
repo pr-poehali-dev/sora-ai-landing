@@ -1010,6 +1010,129 @@ const Index = () => {
           </div>
         </article>
       </div>
+
+      <footer className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white mt-20">
+        <div className="container max-w-6xl mx-auto px-4 py-12">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                SORA
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Создавайте невероятные видео из текста с помощью нейросети Sora от OpenAI. Быстро, удобно, без VPN.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-bold mb-4 text-purple-400">Навигация</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <button 
+                    onClick={() => scrollToSection('what-is-sora')}
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    Что такое Sora
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => scrollToSection('capabilities')}
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    Возможности
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => scrollToSection('access')}
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    Как получить доступ
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => scrollToSection('faq')}
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    FAQ
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold mb-4 text-purple-400">Сервис</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a 
+                    href="https://t.me/your_bot" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    Telegram-бот
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://sora.chatgpt.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    Официальный сайт
+                  </a>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => scrollToSection('why-us')}
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    Почему мы
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => scrollToSection('alternatives')}
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    Альтернативы
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold mb-4 text-purple-400">Контакты</h4>
+              <ul className="space-y-2 text-sm">
+                <li className="text-gray-300">
+                  📧 support@sora-ai.ru
+                </li>
+                <li>
+                  <a 
+                    href="https://t.me/your_bot" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
+                  >
+                    💬 Telegram
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-700 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+              <p>© 2025 Sora AI. Все права защищены.</p>
+              <p className="text-center">
+                Сервис не является официальным продуктом OpenAI
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
