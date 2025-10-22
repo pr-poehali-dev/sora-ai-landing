@@ -244,6 +244,95 @@ const Index = () => {
               </p>
             </div>
           </div>
+
+          <h2 className="text-3xl font-bold mb-6 mt-12">
+            Как получить доступ к Sora
+          </h2>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            Одна из главных сложностей при работе с Sora — это ограниченный доступ. Рассмотрим все доступные способы получения доступа к нейросети.
+          </p>
+
+          <h3 className="text-2xl font-semibold mb-4 mt-8">
+            Что такое инвайт-коды (invite codes)
+          </h3>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+            Инвайт-код — это специальный код приглашения, который необходимо ввести при регистрации в приложении или на сайте Sora. Без него доступ к генерации видео невозможен. OpenAI использует систему инвайтов, чтобы контролировать нагрузку на серверы и постепенно открывать доступ для новых пользователей.
+          </p>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            Каждый пользователь, получивший доступ, может пригласить ограниченное количество друзей, что создает дефицит кодов и активный обмен приглашениями в сообществах.
+          </p>
+
+          <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/20 dark:to-purple-950/20 rounded-2xl p-8 md:p-10 mb-12 border-2 border-indigo-300 dark:border-indigo-700">
+            <h3 className="text-2xl font-bold mb-6">
+              Если вы хотите создавать видео еще проще — без регистрации на сайте OpenAI, используйте наш Telegram-бот:
+            </h3>
+
+            <div className="bg-white/60 dark:bg-black/20 rounded-lg p-6 mb-6">
+              <ol className="space-y-3 text-lg">
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-indigo-600 dark:text-indigo-400 min-w-[24px]">1.</span>
+                  <span>Откройте <Button 
+                    variant="link" 
+                    className="p-0 h-auto font-bold text-indigo-600 dark:text-indigo-400"
+                    onClick={() => window.open('https://t.me/your_bot', '_blank')}
+                  >
+                    Telegram-бот
+                  </Button></span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-indigo-600 dark:text-indigo-400 min-w-[24px]">2.</span>
+                  <span>Нажмите /start</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-indigo-600 dark:text-indigo-400 min-w-[24px]">3.</span>
+                  <span>Напишите текстовое описание видео</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="font-bold text-indigo-600 dark:text-indigo-400 min-w-[24px]">4.</span>
+                  <span>Получите готовое видео прямо в Telegram за 2-3 минуты!</span>
+                </li>
+              </ol>
+            </div>
+
+            <div className="mb-8">
+              <p className="font-semibold text-lg mb-4">Преимущества нашего бота:</p>
+              <div className="grid md:grid-cols-2 gap-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">🚀</span>
+                  <span>Без VPN и блокировок</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">💰</span>
+                  <span>Первые 3 генерации бесплатно</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">⚡</span>
+                  <span>Быстрая обработка (в 2 раза быстрее официального сайта)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">🇷🇺</span>
+                  <span>Полная поддержка русского языка</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">📱</span>
+                  <span>Работает на любом устройстве</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700"
+                onClick={() => window.open('https://t.me/your_bot', '_blank')}
+              >
+                👉 Попробовать Telegram-бот прямо сейчас
+              </Button>
+            </div>
+          </div>
         </article>
       </div>
     </div>
