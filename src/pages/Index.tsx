@@ -1,17 +1,17 @@
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useCallback, memo } from "react";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("");
 
-  const scrollToSection = (id: string) => {
+  const scrollToSection = useCallback((id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
       setActiveSection(id);
     }
-  };
+  }, []);
 
   const menuItems = [
     { id: "what-is-sora", label: "Что такое Sora" },
@@ -130,6 +130,8 @@ const Index = () => {
                 alt="Пример видео, созданного нейросетью Sora 2 от OpenAI - реалистичная генерация из текста"
                 className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-2xl md:rounded-3xl shadow-2xl border border-purple-500/30"
                 loading="eager"
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
           </div>
