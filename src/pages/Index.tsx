@@ -181,14 +181,14 @@ const Index = () => {
             <div className="flex justify-center">
               <Button 
                 size="lg" 
-                className="text-xl px-12 py-8 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-2xl shadow-purple-500/40"
+                className="text-base md:text-xl px-8 md:px-12 py-6 md:py-8 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-2xl shadow-purple-500/40"
                 onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
               >
-                <Icon name="Sparkles" size={24} className="mr-2" />
+                <Icon name="Sparkles" size={20} className="mr-2" />
                 Получить доступ к Sora 2
               </Button>
             </div>
-          </div>
+          </section>
 
           <div className="space-y-12 md:space-y-20 text-white">
             <section id="what-is-sora" className="scroll-mt-20">
