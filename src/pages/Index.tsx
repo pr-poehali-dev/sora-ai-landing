@@ -27,16 +27,16 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b">
         <div className="container max-w-6xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between gap-8">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-500 via-purple-600 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white text-lg font-black">S</span>
+          <div className="flex items-center gap-8">
+            <div className="flex items-center gap-3 flex-shrink-0">
+              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 via-purple-600 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                <span className="text-white text-xl font-black">S</span>
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent whitespace-nowrap">
                 SORA
               </span>
             </div>
-            <div className="flex items-center gap-2 overflow-x-auto">
+            <div className="flex items-center gap-2 overflow-x-auto flex-1">
               {menuItems.map((item) => (
                 <button
                   key={item.id}
