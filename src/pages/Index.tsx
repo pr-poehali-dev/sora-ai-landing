@@ -99,10 +99,7 @@ const Index = () => {
                   className="text-base md:text-lg px-6 md:px-8 py-5 md:py-7 border-2 border-purple-500/50 text-white hover:bg-purple-900/30 font-semibold"
                   onClick={() => window.open('https://syntx.ai/welcome/1bQ2wH8v', '_blank')}
                   aria-label="Перейти на официальный сайт"
-                >
-                  <Icon name="Globe" size={18} className="mr-2" />
-                  Официальный сайт
-                </Button>
+                >Попробовать на сайте</Button>
               </div>
               
               <div className="flex items-center gap-4 md:gap-8 pt-4">
