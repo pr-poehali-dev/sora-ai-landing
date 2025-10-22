@@ -495,6 +495,155 @@ const Index = () => {
               </div>
             </section>
 
+            <section id="reviews" className="scroll-mt-20 mb-20">
+              <div className="text-center mb-12">
+                <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                  Отзывы пользователей
+                </h2>
+                <p className="text-xl text-gray-300">Что говорят те, кто уже использует Sora для создания видео</p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="bg-gradient-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-sm border border-purple-500/40 rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-2xl font-bold mr-3">
+                      А
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg">Алексей М.</h4>
+                      <p className="text-sm text-gray-400">Маркетолог</p>
+                    </div>
+                  </div>
+                  <div className="flex mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
+                  <p className="text-gray-300 leading-relaxed">
+                    Раньше на создание одного рекламного ролика уходила неделя и 50-100 тысяч рублей. 
+                    С Sora делаю качественные видео за 10 минут. Это просто невероятно!
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/40 rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-2xl font-bold mr-3">
+                      М
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg">Мария К.</h4>
+                      <p className="text-sm text-gray-400">Контент-креатор</p>
+                    </div>
+                  </div>
+                  <div className="flex mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
+                  <p className="text-gray-300 leading-relaxed">
+                    Использую Sora для создания контента в TikTok и Instagram. Реакция подписчиков просто взрывная! 
+                    Охваты выросли в 3 раза, все спрашивают как я это снимаю.
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-sm border border-purple-500/40 rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-2xl font-bold mr-3">
+                      Д
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg">Дмитрий П.</h4>
+                      <p className="text-sm text-gray-400">Предприниматель</p>
+                    </div>
+                  </div>
+                  <div className="flex mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
+                  <p className="text-gray-300 leading-relaxed">
+                    Запустил онлайн-курс и нужно было много обучающих видео. Благодаря Sora сэкономил больше 500 000 рублей 
+                    на видеопродакшене. Качество отличное!
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/40 rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-2xl font-bold mr-3">
+                      Е
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg">Елена В.</h4>
+                      <p className="text-sm text-gray-400">Дизайнер</p>
+                    </div>
+                  </div>
+                  <div className="flex mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
+                  <p className="text-gray-300 leading-relaxed">
+                    Работаю с клиентами из США и Европы. Раньше приходилось объяснять идеи словами, 
+                    теперь показываю готовое видео за минуты. Клиенты в восторге!
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-sm border border-purple-500/40 rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-2xl font-bold mr-3">
+                      И
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg">Игорь С.</h4>
+                      <p className="text-sm text-gray-400">Режиссёр</p>
+                    </div>
+                  </div>
+                  <div className="flex mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
+                  <p className="text-gray-300 leading-relaxed">
+                    Использую Sora для создания раскадровок и визуализации сцен перед съёмками. 
+                    Это экономит массу времени и помогает команде лучше понять концепцию.
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/40 rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-2xl font-bold mr-3">
+                      О
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg">Ольга Т.</h4>
+                      <p className="text-sm text-gray-400">Блогер</p>
+                    </div>
+                  </div>
+                  <div className="flex mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
+                  <p className="text-gray-300 leading-relaxed">
+                    Никогда не думала, что смогу создавать такие крутые видео сама! Telegram-бот работает идеально, 
+                    а результат выглядит как из профессиональной студии.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-12 text-center">
+                <div className="inline-block bg-gradient-to-r from-purple-900/40 to-blue-900/40 backdrop-blur-sm border border-purple-500/30 rounded-2xl px-8 py-6">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <Icon name="Users" size={24} className="text-purple-400" />
+                    <span className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                      12,000+
+                    </span>
+                  </div>
+                  <p className="text-gray-300">пользователей уже создают видео с помощью Sora</p>
+                </div>
+              </div>
+            </section>
+
             <section className="scroll-mt-20 mb-20">
               <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                 Заключение
