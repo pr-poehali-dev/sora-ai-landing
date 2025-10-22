@@ -1,8 +1,50 @@
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const Index = () => {
+  const [activeSection, setActiveSection] = useState("");
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      setActiveSection(id);
+    }
+  };
+
+  const menuItems = [
+    { id: "what-is-sora", label: "Что такое Sora" },
+    { id: "developer", label: "Разработчик" },
+    { id: "capabilities", label: "Возможности" },
+    { id: "access", label: "Как получить доступ" },
+    { id: "download", label: "Где скачать" },
+    { id: "alternatives", label: "Альтернативы" },
+    { id: "why-us", label: "Почему мы" },
+    { id: "faq", label: "FAQ" },
+  ];
+
   return (
     <div className="min-h-screen bg-background">
+      <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b">
+        <div className="container max-w-6xl mx-auto px-4 py-3">
+          <div className="flex items-center gap-2 overflow-x-auto">
+            {menuItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
+                  activeSection === item.id
+                    ? "bg-primary text-primary-foreground"
+                    : "hover:bg-muted"
+                }`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </nav>
+
       <div className="container max-w-4xl mx-auto px-4 py-12">
         <article className="prose prose-lg max-w-none">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -60,7 +102,7 @@ const Index = () => {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold mb-6 mt-12">
+          <h2 id="what-is-sora" className="text-3xl font-bold mb-6 mt-12 scroll-mt-20">
             Что такое нейросеть Sora и зачем она нужна
           </h2>
 
@@ -95,7 +137,7 @@ const Index = () => {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold mb-6 mt-12">
+          <h2 id="developer" className="text-3xl font-bold mb-6 mt-12 scroll-mt-20">
             Кто разработчик Sora
           </h2>
 
@@ -115,7 +157,7 @@ const Index = () => {
             Однако доступ к Sora ограничен: на момент запуска в 2025 году нейросеть работает в режиме инвайт-кодов и официально доступна только в США и Канаде. Это создало дефицит и повысило интерес во всем мире, включая Россию. Пользователи активно ищут способы получить приглашение, обмениваются кодами в сообществах и следят за каждым обновлением OpenAI.
           </p>
 
-          <h2 className="text-3xl font-bold mb-6 mt-12">
+          <h2 id="capabilities" className="text-3xl font-bold mb-6 mt-12 scroll-mt-20">
             Возможности нейросети Sora
           </h2>
 
@@ -245,7 +287,7 @@ const Index = () => {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold mb-6 mt-12">
+          <h2 id="access" className="text-3xl font-bold mb-6 mt-12 scroll-mt-20">
             Как получить доступ к Sora
           </h2>
 
@@ -334,7 +376,7 @@ const Index = () => {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold mb-6 mt-12">
+          <h2 id="download" className="text-3xl font-bold mb-6 mt-12 scroll-mt-20">
             Где скачать и установить Sora
           </h2>
 
@@ -579,7 +621,7 @@ const Index = () => {
             </Button>
           </div>
 
-          <h2 className="text-3xl font-bold mb-6 mt-12">
+          <h2 id="alternatives" className="text-3xl font-bold mb-6 mt-12 scroll-mt-20">
             Альтернативы и аналоги Sora
           </h2>
 
@@ -696,7 +738,7 @@ const Index = () => {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold mb-6 mt-12">
+          <h2 id="why-us" className="text-3xl font-bold mb-6 mt-12 scroll-mt-20">
             Почему наш сервис — лучший способ получить доступ к Sora
           </h2>
 
@@ -790,7 +832,7 @@ const Index = () => {
             </Button>
           </div>
 
-          <h2 className="text-3xl font-bold mb-8 mt-16">
+          <h2 id="faq" className="text-3xl font-bold mb-8 mt-16 scroll-mt-20">
             FAQ
           </h2>
 
