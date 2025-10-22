@@ -83,7 +83,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-xl font-semibold"
-                  onClick={() => window.open('https://t.me/your_bot', '_blank')}
+                  onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
                 >
                   🤖 Перейти в бот
                 </Button>
@@ -141,7 +141,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
-                onClick={() => window.open('https://t.me/your_bot', '_blank')}
+                onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
               >
                 👉 Получить доступ к Sora 2
               </Button>
@@ -365,7 +365,7 @@ const Index = () => {
                   <span>Откройте <Button 
                     variant="link" 
                     className="p-0 h-auto font-bold text-indigo-600 dark:text-indigo-400"
-                    onClick={() => window.open('https://t.me/your_bot', '_blank')}
+                    onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
                   >
                     Telegram-бот
                   </Button></span>
@@ -415,7 +415,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="text-lg px-8 py-6 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700"
-                onClick={() => window.open('https://t.me/your_bot', '_blank')}
+                onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
               >
                 👉 Попробовать Telegram-бот прямо сейчас
               </Button>
@@ -661,7 +661,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
-              onClick={() => window.open('https://t.me/your_bot', '_blank')}
+              onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
             >
               🤖 Перейти в Telegram-бот
             </Button>
@@ -872,7 +872,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="text-lg px-10 py-7 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-lg"
-              onClick={() => window.open('https://t.me/your_bot', '_blank')}
+              onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
             >
               🚀 Получить доступ к Sora прямо сейчас
             </Button>
@@ -997,7 +997,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   className="text-lg px-10 py-7 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-xl"
-                  onClick={() => window.open('https://t.me/your_bot', '_blank')}
+                  onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
                 >
                   ✨ Начать создавать видео бесплатно
                 </Button>
@@ -1066,7 +1066,7 @@ const Index = () => {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a 
-                    href="https://t.me/your_bot" 
+                    href="https://t.me/syntxaibot?start=aff_797685317" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-gray-300 hover:text-white transition-colors"
