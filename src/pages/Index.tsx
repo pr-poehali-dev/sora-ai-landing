@@ -46,39 +46,41 @@ const Index = () => {
       </nav>
 
       <div className="container max-w-4xl mx-auto px-4 py-12">
-        <div className="relative w-full h-[400px] rounded-3xl overflow-hidden mb-12 shadow-2xl">
+        <div className="relative w-full min-h-[500px] md:h-[550px] rounded-3xl overflow-hidden mb-12 shadow-2xl">
           <img 
             src="https://cdn.poehali.dev/projects/b1f66519-dfea-4ee9-aa2d-976d6e3fc70c/files/0ba38426-a80d-4b47-9bb0-9a8278b9bbbc.jpg"
             alt="Sora AI Video Generation"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
-          <div className="absolute bottom-8 left-8 right-8 text-white">
-            <div className="inline-block bg-purple-600/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-3">
-              ✨ Новинка 2025
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg mb-3">
-              Sora AI
-            </h1>
-            <p className="text-xl md:text-2xl mb-6 text-purple-100">
-              Создавайте видео из текста за минуты
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="text-lg px-8 py-6 border-2 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
-                onClick={() => window.open('https://sora.chatgpt.com', '_blank')}
-              >
-                🌐 Попробовать на сайте
-              </Button>
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-lg"
-                onClick={() => window.open('https://t.me/your_bot', '_blank')}
-              >
-                🤖 Перейти в бот
-              </Button>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-10">
+            <div className="max-w-3xl">
+              <div className="inline-block bg-purple-600/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                ✨ Новинка 2025
+              </div>
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg mb-4 text-white">
+                Sora AI
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 text-purple-100 drop-shadow-md">
+                Создавайте видео из текста за минуты
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="text-lg px-8 py-6 border-2 bg-white/95 backdrop-blur-sm border-white text-gray-900 hover:bg-white font-semibold"
+                  onClick={() => window.open('https://sora.chatgpt.com', '_blank')}
+                >
+                  🌐 Попробовать на сайте
+                </Button>
+                <Button 
+                  size="lg" 
+                  className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-xl font-semibold"
+                  onClick={() => window.open('https://t.me/your_bot', '_blank')}
+                >
+                  🤖 Перейти в бот
+                </Button>
+              </div>
             </div>
           </div>
         </div>
