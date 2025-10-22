@@ -298,7 +298,7 @@ const Index = () => {
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-xl font-bold">1</div>
                     <div>
-                      <h3 className="text-2xl font-bold mb-3">Через официальный сайт OpenAI</h3>
+                      <h3 className="text-2xl font-bold mb-3">Через наш официальный сайт </h3>
                       <p className="text-gray-300 mb-4">
                         Зарегистрируйтесь на платформе OpenAI и получите доступ через подписку ChatGPT Plus или Pro.
                         Требуется VPN и международная банковская карта.
