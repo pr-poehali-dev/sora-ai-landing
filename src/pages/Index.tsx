@@ -333,6 +333,186 @@ const Index = () => {
               </Button>
             </div>
           </div>
+
+          <h2 className="text-3xl font-bold mb-6 mt-12">
+            Где скачать и установить Sora
+          </h2>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            Чтобы начать работать с Sora, нужно знать, где находятся официальные источники для скачивания.
+          </p>
+
+          <h3 className="text-2xl font-semibold mb-4 mt-8">
+            Sora официальный сайт
+          </h3>
+
+          <div className="bg-card rounded-lg p-6 border mb-6">
+            <p className="mb-3"><strong>Главная страница нейросети:</strong> <a href="https://openai.com/sora" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">openai.com/sora</a></p>
+            <p><strong>Веб-версия для генерации:</strong> <a href="https://sora.chatgpt.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">sora.chatgpt.com</a> или <a href="https://sora.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">sora.com</a></p>
+          </div>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            Именно через эти адреса осуществляется доступ к Sora в браузере. Здесь вы можете регистрироваться, вводить инвайт-коды и создавать видео без необходимости устанавливать приложение.
+          </p>
+
+          <h3 className="text-2xl font-semibold mb-4 mt-8">
+            Версии для Android, iPhone, Windows, macOS
+          </h3>
+
+          <div className="space-y-6 mb-8">
+            <div className="bg-card rounded-lg p-6 border">
+              <h4 className="text-xl font-semibold mb-3">iOS (iPhone и iPad):</h4>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Официальное приложение "Sora by OpenAI" доступно в App Store: <a href="https://apps.apple.com/us/app/sora-by-openai/id6744034028" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">apps.apple.com/us/app/sora-by-openai/id6744034028</a></li>
+                <li>• Требования: iOS 18.0 и выше</li>
+                <li>• Приложение полностью бесплатное, но требует инвайт-кода для активации</li>
+              </ul>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 border">
+              <h4 className="text-xl font-semibold mb-3">Android:</h4>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Мобильное приложение для Android было анонсировано и доступно для предварительной регистрации в Google Play: <a href="https://play.google.com/store/apps/details?id=com.openai.sora" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">play.google.com/store/apps/details?id=com.openai.sora</a></li>
+                <li>• Требования: Android 7.1 и выше</li>
+                <li>• Однако на момент написания статьи полный функционал доступен не во всех регионах</li>
+              </ul>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 border">
+              <h4 className="text-xl font-semibold mb-3">Windows и macOS:</h4>
+              <p className="text-muted-foreground">
+                Нативного десктопного приложения для компьютеров пока нет. Пользователи Windows и macOS могут работать с Sora через веб-версию <a href="https://sora.chatgpt.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">sora.chatgpt.com</a> в любом современном браузере (Chrome, Firefox, Safari, Edge).
+              </p>
+            </div>
+          </div>
+
+          <h3 className="text-2xl font-semibold mb-4 mt-8">
+            Где скачать официально и безопасно
+          </h3>
+
+          <p className="text-lg mb-4">Всегда используйте только официальные источники:</p>
+
+          <div className="bg-green-50 dark:bg-green-950/20 rounded-lg p-6 border border-green-200 dark:border-green-800 mb-6">
+            <ul className="space-y-2 text-lg">
+              <li className="flex items-center gap-2">
+                <span className="text-green-600 dark:text-green-400">✓</span>
+                <span>App Store (для iOS)</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-green-600 dark:text-green-400">✓</span>
+                <span>Google Play (для Android)</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-green-600 dark:text-green-400">✓</span>
+                <span>Официальный сайт openai.com/sora</span>
+              </li>
+            </ul>
+          </div>
+
+          <p className="text-lg mb-4"><strong>Никогда не скачивайте Sora из:</strong></p>
+
+          <div className="bg-red-50 dark:bg-red-950/20 rounded-lg p-6 border border-red-200 dark:border-red-800 mb-8">
+            <ul className="space-y-2 text-lg">
+              <li className="flex items-center gap-2">
+                <span className="text-red-600 dark:text-red-400">✗</span>
+                <span>Сторонних сайтов с APK-файлами</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-red-600 dark:text-red-400">✗</span>
+                <span>Telegram-каналов, предлагающих "взломанные" версии</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-red-600 dark:text-red-400">✗</span>
+                <span>Неофициальных магазинов приложений</span>
+              </li>
+            </ul>
+          </div>
+
+          <p className="text-lg text-red-600 dark:text-red-400 font-semibold mb-8">
+            ⚠️ Использование неофициальных версий грозит утечкой ваших данных, вирусами и блокировкой аккаунта OpenAI.
+          </p>
+
+          <h3 className="text-2xl font-semibold mb-4 mt-8">
+            Разница между официальной и взломанной версией
+          </h3>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-green-50 dark:bg-green-950/20 rounded-lg p-6 border border-green-200 dark:border-green-800">
+              <h4 className="text-xl font-semibold mb-4 text-green-700 dark:text-green-400">Официальная версия:</h4>
+              <ul className="space-y-2">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 dark:text-green-400 mt-1">✓</span>
+                  <span>Безопасна и защищена</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 dark:text-green-400 mt-1">✓</span>
+                  <span>Регулярные обновления и новые функции</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 dark:text-green-400 mt-1">✓</span>
+                  <span>Техническая поддержка от OpenAI</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 dark:text-green-400 mt-1">✓</span>
+                  <span>Легальное использование контента</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-600 dark:text-green-400 mt-1">✓</span>
+                  <span>Стабильная работа</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-red-50 dark:bg-red-950/20 rounded-lg p-6 border border-red-200 dark:border-red-800">
+              <h4 className="text-xl font-semibold mb-4 text-red-700 dark:text-red-400">"Взломанная" версия:</h4>
+              <ul className="space-y-2">
+                <li className="flex items-start gap-2">
+                  <span className="text-red-600 dark:text-red-400 mt-1">✗</span>
+                  <span>Риск вирусов и кражи данных</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-600 dark:text-red-400 mt-1">✗</span>
+                  <span>Отсутствие обновлений</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-600 dark:text-red-400 mt-1">✗</span>
+                  <span>Возможная блокировка аккаунта</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-600 dark:text-red-400 mt-1">✗</span>
+                  <span>Нестабильная работа</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-600 dark:text-red-400 mt-1">✗</span>
+                  <span>Нет технической поддержки</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-blue-50 dark:bg-blue-950/20 rounded-lg p-6 border border-blue-200 dark:border-blue-800 mb-8">
+            <p className="text-lg font-semibold">
+              <strong>Вывод:</strong> используйте только официальные версии Sora, чтобы защитить свои данные и получать качественный сервис.
+            </p>
+          </div>
+
+          <h3 className="text-2xl font-semibold mb-4 mt-8">
+            Альтернатива: Telegram-бот вместо приложения
+          </h3>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            Если у вас возникают проблемы с установкой официального приложения Sora (недоступен регион, нет инвайт-кода, сложности с VPN), есть более простое решение — используйте наш Telegram-бот.
+          </p>
+
+          <div className="flex justify-center mb-12">
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+              onClick={() => window.open('https://t.me/your_bot', '_blank')}
+            >
+              🤖 Перейти в Telegram-бот
+            </Button>
+          </div>
         </article>
       </div>
     </div>
