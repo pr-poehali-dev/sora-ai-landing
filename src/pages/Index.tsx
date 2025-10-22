@@ -76,7 +76,7 @@ const Index = () => {
                   size="lg" 
                   variant="outline"
                   className="text-lg px-8 py-6 border-2 bg-white/95 backdrop-blur-sm border-white text-gray-900 hover:bg-white font-semibold"
-                  onClick={() => window.open('https://sora.chatgpt.com', '_blank')}
+                  onClick={() => window.open('https://syntx.ai/welcome/1bQ2wH8v', '_blank')}
                 >
                   🌐 Попробовать на сайте
                 </Button>
