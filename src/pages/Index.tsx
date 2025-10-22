@@ -29,9 +29,6 @@ const Index = () => {
         <div className="container max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-3 flex-shrink-0">
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 via-purple-600 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white text-xl font-black">S</span>
-              </div>
               <span className="text-2xl font-bold text-white whitespace-nowrap">
                 SORA
               </span>
