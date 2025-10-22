@@ -26,18 +26,17 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b">
-        <div className="container max-w-6xl mx-auto px-4 py-3">
-          <div className="flex items-center gap-6">
-            <div className="flex items-center gap-3 mr-4">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg blur-sm opacity-75"></div>
-                <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 px-4 py-2 rounded-lg">
-                  <span className="text-2xl font-bold text-white tracking-tight">SORA</span>
-                </div>
+        <div className="container max-w-6xl mx-auto px-4 py-4">
+          <div className="flex items-center justify-between gap-8">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-purple-500 via-purple-600 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
+                <span className="text-white text-lg font-black">S</span>
               </div>
-              <div className="hidden sm:block h-6 w-px bg-border"></div>
+              <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                SORA
+              </span>
             </div>
-            <div className="flex items-center gap-2 overflow-x-auto flex-1">
+            <div className="flex items-center gap-2 overflow-x-auto">
               {menuItems.map((item) => (
                 <button
                   key={item.id}
