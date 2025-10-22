@@ -1013,7 +1013,7 @@ const Index = () => {
 
       <footer className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white mt-20">
         <div className="container max-w-6xl mx-auto px-4 py-12">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                 SORA
@@ -1099,25 +1099,6 @@ const Index = () => {
                   >
                     Альтернативы
                   </button>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4 text-purple-400">Контакты</h4>
-              <ul className="space-y-2 text-sm">
-                <li className="text-gray-300">
-                  📧 support@sora-ai.ru
-                </li>
-                <li>
-                  <a 
-                    href="https://t.me/your_bot" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
-                  >
-                    💬 Telegram
-                  </a>
                 </li>
               </ul>
             </div>
