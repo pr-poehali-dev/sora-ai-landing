@@ -114,6 +114,136 @@ const Index = () => {
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
             Однако доступ к Sora ограничен: на момент запуска в 2025 году нейросеть работает в режиме инвайт-кодов и официально доступна только в США и Канаде. Это создало дефицит и повысило интерес во всем мире, включая Россию. Пользователи активно ищут способы получить приглашение, обмениваются кодами в сообществах и следят за каждым обновлением OpenAI.
           </p>
+
+          <h2 className="text-3xl font-bold mb-6 mt-12">
+            Возможности нейросети Sora
+          </h2>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            Sora предлагает широкий спектр функций для создания видеоконтента, который ранее был доступен только профессиональным студиям.
+          </p>
+
+          <h3 className="text-2xl font-semibold mb-4 mt-8">
+            Генерация видео по текстовому описанию
+          </h3>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+            Основная функция Sora — это <strong>text-to-video</strong>, то есть создание видео из текстового запроса (промпта). Вы описываете сцену на естественном языке, и нейросеть генерирует соответствующий видеоролик.
+          </p>
+
+          <div className="bg-muted/50 rounded-lg p-6 mb-6">
+            <p className="font-semibold mb-3">Примеры промптов:</p>
+            <ul className="space-y-2 text-muted-foreground">
+              <li>• "Кот в космическом скафандре плавает среди звезд"</li>
+              <li>• "Закат над океаном с летающими дельфинами в стиле фэнтези"</li>
+              <li>• "Футуристический город с летающими автомобилями в дождливую ночь"</li>
+            </ul>
+          </div>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            Sora понимает не только объекты, но и действия, атмосферу, стиль (кинематографический, анимационный, фотореалистичный, сюрреалистический), освещение и даже эмоции персонажей.
+          </p>
+
+          <h3 className="text-2xl font-semibold mb-4 mt-8">
+            Поддержка Sora 2: обновления и улучшения
+          </h3>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            Sora 2, выпущенная в сентябре 2025 года, принесла существенные улучшения:
+          </p>
+
+          <div className="grid gap-4 mb-8">
+            <div className="bg-card rounded-lg p-5 border">
+              <h4 className="font-semibold text-lg mb-2">Увеличенная длительность видео:</h4>
+              <p className="text-muted-foreground">
+                Если первая версия ограничивалась 5-10 секундами, то Sora 2 может генерировать ролики до 20 секунд с высокой стабильностью.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-lg p-5 border">
+              <h4 className="font-semibold text-lg mb-2">Реалистичность и детализация:</h4>
+              <p className="text-muted-foreground">
+                Улучшена физика движений, текстуры объектов, игра света и теней. Видео стали ещё более убедительными и естественными.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-lg p-5 border">
+              <h4 className="font-semibold text-lg mb-2">Звуковое сопровождение:</h4>
+              <p className="text-muted-foreground">
+                Sora 2 также научилась генерировать звук, синхронизированный с видео — шаги, шум воды, голоса и фоновую атмосферу.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-lg p-5 border">
+              <h4 className="font-semibold text-lg mb-2">Расширенные настройки:</h4>
+              <p className="text-muted-foreground">
+                Больше контроля над разрешением (480p, 720p, 1080p), соотношением сторон (16:9, 9:16, 1:1) и стилистикой видео.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-lg p-5 border">
+              <h4 className="font-semibold text-lg mb-2">Редактирование и ремикс:</h4>
+              <p className="text-muted-foreground">
+                В приложении Sora можно редактировать чужие генерации, создавать вариации на основе существующих видео и даже добавлять себя в ролик через функцию "камео".
+              </p>
+            </div>
+          </div>
+
+          <h3 className="text-2xl font-semibold mb-4 mt-8">
+            Доступные функции: видео, фото, AI video generator, AI image generator
+          </h3>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+            Хотя основная специализация Sora — генерация видео, нейросеть также способна:
+          </p>
+
+          <ul className="space-y-3 text-lg text-muted-foreground mb-8">
+            <li>• Создавать статичные изображения высокого качества из текстовых описаний (функция AI image generator).</li>
+            <li>• Расширять существующие видео — вы загружаете короткий клип, а Sora продолжает его, добавляя новые кадры.</li>
+            <li>• Генерировать видео из фотографий — функция image-to-video, которая оживляет статичные снимки.</li>
+            <li>• Создавать циклические видео (loops) для использования в качестве фонов и заставок.</li>
+          </ul>
+
+          <h3 className="text-2xl font-semibold mb-4 mt-8">
+            Примеры: что можно создать в Sora
+          </h3>
+
+          <div className="grid md:grid-cols-2 gap-4 mb-8">
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 rounded-lg p-6 border border-blue-200 dark:border-blue-800">
+              <h4 className="font-semibold text-lg mb-2">Рекламные ролики:</h4>
+              <p className="text-muted-foreground text-sm">
+                Визуализация продуктов, демонстрация услуг, создание эмоциональных сторителлинговых видео.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 rounded-lg p-6 border border-purple-200 dark:border-purple-800">
+              <h4 className="font-semibold text-lg mb-2">Образовательный контент:</h4>
+              <p className="text-muted-foreground text-sm">
+                Исторические реконструкции, научные визуализации, учебные анимации.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 rounded-lg p-6 border border-green-200 dark:border-green-800">
+              <h4 className="font-semibold text-lg mb-2">Социальные сети:</h4>
+              <p className="text-muted-foreground text-sm">
+                Короткие вирусные видео для TikTok, Instagram Reels, YouTube Shorts.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20 rounded-lg p-6 border border-orange-200 dark:border-orange-800">
+              <h4 className="font-semibold text-lg mb-2">Концепт-арт и предвизуализация:</h4>
+              <p className="text-muted-foreground text-sm">
+                Режиссеры и сценаристы могут быстро визуализировать идеи перед началом съемок.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-red-50 to-rose-50 dark:from-red-950/20 dark:to-rose-950/20 rounded-lg p-6 border border-red-200 dark:border-red-800">
+              <h4 className="font-semibold text-lg mb-2">Креативные эксперименты:</h4>
+              <p className="text-muted-foreground text-sm">
+                Сюрреалистические видео, фэнтезийные миры, абстрактные композиции.
+              </p>
+            </div>
+          </div>
         </article>
       </div>
     </div>
