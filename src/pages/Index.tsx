@@ -26,93 +26,99 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-purple-950 to-gray-950">
-      <nav className="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-purple-800/30">
-        <div className="container max-w-7xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between gap-8">
-            <div className="flex items-center gap-3 flex-shrink-0">
-              <span className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                SORA
-              </span>
-            </div>
-            <div className="hidden lg:flex items-center gap-2 overflow-x-auto flex-1">
-              {menuItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-all ${
-                    activeSection === item.id
-                      ? "bg-purple-600 text-white"
-                      : "text-gray-300 hover:bg-purple-900/30 hover:text-white"
-                  }`}
-                >
-                  {item.label}
-                </button>
-              ))}
+      <header>
+        <nav className="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-purple-800/30" role="navigation" aria-label="Основная навигация">
+          <div className="container max-w-7xl mx-auto px-4 py-3 md:py-4">
+            <div className="flex items-center justify-between gap-4 md:gap-8">
+              <div className="flex items-center gap-3 flex-shrink-0">
+                <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                  SORA
+                </h1>
+              </div>
+              <div className="hidden lg:flex items-center gap-2 overflow-x-auto flex-1">
+                {menuItems.map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className={`px-3 xl:px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-all ${
+                      activeSection === item.id
+                        ? "bg-purple-600 text-white"
+                        : "text-gray-300 hover:bg-purple-900/30 hover:text-white"
+                    }`}
+                    aria-label={`Перейти к разделу ${item.label}`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
 
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/20 via-transparent to-transparent"></div>
-        
-        <div className="container max-w-7xl mx-auto px-4 py-16 relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-            <div className="space-y-8">
-              <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2">
-                <Icon name="Sparkles" size={16} className="text-purple-400" />
-                <span className="text-purple-300 text-sm font-medium">Новинка 2025</span>
-              </div>
+      <main>
+        <section className="relative overflow-hidden" aria-label="Главный баннер">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/20 via-transparent to-transparent"></div>
+          
+          <div className="container max-w-7xl mx-auto px-4 py-8 md:py-16 relative">
+            <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-20">
+              <div className="space-y-6 md:space-y-8">
+                <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-3 md:px-4 py-1.5 md:py-2">
+                  <Icon name="Sparkles" size={16} className="text-purple-400" />
+                  <span className="text-purple-300 text-xs md:text-sm font-medium">Новинка 2025</span>
+                </div>
+                
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+                  <span className="bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
+                    Создавайте видео
+                  </span>
+                  <br />
+                  <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                    из текста за минуты
+                  </span>
+                </h2>
+                
+                <p className="text-base md:text-xl text-gray-300 leading-relaxed">
+                  Нейросеть Sora от OpenAI превращает ваши идеи в реалистичные видео. 
+                  Без монтажа, без камер — только ваше воображение.
+                </p>
               
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
-                  Создавайте видео
-                </span>
-                <br />
-                <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                  из текста за минуты
-                </span>
-              </h1>
-              
-              <p className="text-xl text-gray-300 leading-relaxed">
-                Нейросеть Sora от OpenAI превращает ваши идеи в реалистичные видео. 
-                Без монтажа, без камер — только ваше воображение.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                 <Button 
                   size="lg" 
-                  className="text-lg px-8 py-7 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-xl shadow-purple-500/30 font-semibold"
+                  className="text-base md:text-lg px-6 md:px-8 py-5 md:py-7 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-xl shadow-purple-500/30 font-semibold"
                   onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
+                  aria-label="Начать создавать видео бесплатно"
                 >
-                  <Icon name="Sparkles" size={20} className="mr-2" />
+                  <Icon name="Sparkles" size={18} className="mr-2" />
                   Начать бесплатно
                 </Button>
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="text-lg px-8 py-7 border-2 border-purple-500/50 text-white hover:bg-purple-900/30 font-semibold"
+                  className="text-base md:text-lg px-6 md:px-8 py-5 md:py-7 border-2 border-purple-500/50 text-white hover:bg-purple-900/30 font-semibold"
                   onClick={() => window.open('https://syntx.ai/welcome/1bQ2wH8v', '_blank')}
+                  aria-label="Перейти на официальный сайт"
                 >
-                  <Icon name="Globe" size={20} className="mr-2" />
+                  <Icon name="Globe" size={18} className="mr-2" />
                   Официальный сайт
                 </Button>
               </div>
               
-              <div className="flex items-center gap-8 pt-4">
+              <div className="flex items-center gap-4 md:gap-8 pt-4">
                 <div>
-                  <div className="text-3xl font-bold text-white">50K+</div>
-                  <div className="text-sm text-gray-400">Пользователей</div>
+                  <div className="text-2xl md:text-3xl font-bold text-white">50K+</div>
+                  <div className="text-xs md:text-sm text-gray-400">Пользователей</div>
                 </div>
-                <div className="h-12 w-px bg-purple-800"></div>
+                <div className="h-10 md:h-12 w-px bg-purple-800"></div>
                 <div>
-                  <div className="text-3xl font-bold text-white">500K+</div>
-                  <div className="text-sm text-gray-400">Видео создано</div>
+                  <div className="text-2xl md:text-3xl font-bold text-white">500K+</div>
+                  <div className="text-xs md:text-sm text-gray-400">Видео создано</div>
                 </div>
-                <div className="h-12 w-px bg-purple-800"></div>
-                <div>
-                  <div className="text-3xl font-bold text-white">20 сек</div>
-                  <div className="text-sm text-gray-400">Макс. длина</div>
+                <div className="hidden sm:block h-10 md:h-12 w-px bg-purple-800"></div>
+                <div className="hidden sm:block">
+                  <div className="text-2xl md:text-3xl font-bold text-white">20 сек</div>
+                  <div className="text-xs md:text-sm text-gray-400">Макс. длина</div>
                 </div>
               </div>
             </div>
@@ -121,49 +127,50 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-3xl blur-3xl"></div>
               <img 
                 src="https://cdn.poehali.dev/projects/b1f66519-dfea-4ee9-aa2d-976d6e3fc70c/files/0ba38426-a80d-4b47-9bb0-9a8278b9bbbc.jpg"
-                alt="Sora AI Video Generation"
-                className="relative w-full h-[500px] object-cover rounded-3xl shadow-2xl border border-purple-500/30"
+                alt="Пример видео, созданного нейросетью Sora 2 от OpenAI - реалистичная генерация из текста"
+                className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-2xl md:rounded-3xl shadow-2xl border border-purple-500/30"
+                loading="eager"
               />
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 backdrop-blur-sm border border-purple-500/30 rounded-3xl p-8 md:p-12 mb-20">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <section className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 backdrop-blur-sm border border-purple-500/30 rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-12 mb-12 md:mb-20" aria-label="Бесплатный доступ">
+            <div className="text-center mb-6 md:mb-8">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 md:mb-4">
                 🎁 Получите бесплатный доступ к Sora 2
               </h2>
-              <p className="text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 Начните создавать видео прямо сейчас — без очереди и ожидания
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="flex items-start gap-4 bg-green-500/10 border border-green-500/30 rounded-2xl p-6">
-                <Icon name="Check" size={24} className="text-green-400 flex-shrink-0 mt-1" />
+            <div className="grid sm:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
+              <article className="flex items-start gap-3 md:gap-4 bg-green-500/10 border border-green-500/30 rounded-xl md:rounded-2xl p-4 md:p-6">
+                <Icon name="Check" size={20} className="text-green-400 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-1">Мгновенный доступ</h3>
-                  <p className="text-gray-300">Начните создавать видео через 30 секунд</p>
+                  <h3 className="text-base md:text-lg font-semibold text-white mb-1">Мгновенный доступ</h3>
+                  <p className="text-sm md:text-base text-gray-300">Начните создавать видео через 30 секунд</p>
                 </div>
-              </div>
+              </article>
               
-              <div className="flex items-start gap-4 bg-blue-500/10 border border-blue-500/30 rounded-2xl p-6">
-                <Icon name="Check" size={24} className="text-blue-400 flex-shrink-0 mt-1" />
+              <article className="flex items-start gap-3 md:gap-4 bg-blue-500/10 border border-blue-500/30 rounded-xl md:rounded-2xl p-4 md:p-6">
+                <Icon name="Check" size={20} className="text-blue-400 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-1">Без VPN</h3>
-                  <p className="text-gray-300">Работает через удобный Telegram-бот</p>
+                  <h3 className="text-base md:text-lg font-semibold text-white mb-1">Без VPN</h3>
+                  <p className="text-sm md:text-base text-gray-300">Работает через удобный Telegram-бот</p>
                 </div>
-              </div>
+              </article>
               
-              <div className="flex items-start gap-4 bg-purple-500/10 border border-purple-500/30 rounded-2xl p-6">
-                <Icon name="Check" size={24} className="text-purple-400 flex-shrink-0 mt-1" />
+              <article className="flex items-start gap-3 md:gap-4 bg-purple-500/10 border border-purple-500/30 rounded-xl md:rounded-2xl p-4 md:p-6">
+                <Icon name="Check" size={20} className="text-purple-400 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-1">Бесплатные генерации</h3>
-                  <p className="text-gray-300">Создавайте видео без ограничений</p>
+                  <h3 className="text-base md:text-lg font-semibold text-white mb-1">Бесплатные генерации</h3>
+                  <p className="text-sm md:text-base text-gray-300">Создавайте видео без ограничений</p>
                 </div>
-              </div>
+              </article>
               
-              <div className="flex items-start gap-4 bg-pink-500/10 border border-pink-500/30 rounded-2xl p-6">
-                <Icon name="Check" size={24} className="text-pink-400 flex-shrink-0 mt-1" />
+              <article className="flex items-start gap-3 md:gap-4 bg-pink-500/10 border border-pink-500/30 rounded-xl md:rounded-2xl p-4 md:p-6">
+                <Icon name="Check" size={20} className="text-pink-400 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-1">Поддержка 24/7</h3>
                   <p className="text-gray-300">Наша команда всегда на связи</p>
@@ -183,26 +190,26 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="space-y-20 text-white">
+          <div className="space-y-12 md:space-y-20 text-white">
             <section id="what-is-sora" className="scroll-mt-20">
-              <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                Что такое нейросеть Sora
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                Что такое нейросеть Sora от OpenAI
               </h2>
               
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-gradient-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-8">
-                  <Icon name="Zap" size={32} className="text-purple-400 mb-4" />
-                  <h3 className="text-2xl font-bold mb-4">Технология будущего</h3>
-                  <p className="text-gray-300 leading-relaxed">
+              <div className="grid md:grid-cols-2 gap-4 md:gap-8">
+                <article className="bg-gradient-to-br from-purple-900/30 to-blue-900/30 backdrop-blur-sm border border-purple-500/30 rounded-xl md:rounded-2xl p-6 md:p-8">
+                  <Icon name="Zap" size={28} className="text-purple-400 mb-3 md:mb-4" />
+                  <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Технология будущего</h3>
+                  <p className="text-sm md:text-base text-gray-300 leading-relaxed">
                     Sora — это передовая нейросеть от OpenAI, которая генерирует реалистичные видео из текстовых описаний. 
                     Название "Sora" (空) в переводе с японского означает "небо" — символ безграничных возможностей.
                   </p>
-                </div>
+                </article>
                 
-                <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/30 rounded-2xl p-8">
-                  <Icon name="Cpu" size={32} className="text-blue-400 mb-4" />
-                  <h3 className="text-2xl font-bold mb-4">Мощная архитектура</h3>
-                  <p className="text-gray-300 leading-relaxed">
+                <article className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/30 rounded-xl md:rounded-2xl p-6 md:p-8">
+                  <Icon name="Cpu" size={28} className="text-blue-400 mb-3 md:mb-4" />
+                  <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Мощная архитектура</h3>
+                  <p className="text-sm md:text-base text-gray-300 leading-relaxed">
                     Построена на диффузионных моделях и трансформерах. Обучена на миллионах видео и понимает физику реального мира, 
                     законы движения, освещение и взаимодействие объектов.
                   </p>
@@ -675,27 +682,28 @@ const Index = () => {
               </div>
             </section>
 
-            <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-12 text-center">
-              <h2 className="text-4xl font-bold mb-4">Готовы создать своё первое видео?</h2>
-              <p className="text-xl mb-8 text-purple-100">Начните прямо сейчас — это быстро и бесплатно</p>
+            <section className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl md:rounded-3xl p-6 md:p-12 text-center" aria-label="Призыв к действию">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">Готовы создать своё первое видео?</h2>
+              <p className="text-base md:text-xl mb-6 md:mb-8 text-purple-100">Начните прямо сейчас — это быстро и бесплатно</p>
               <Button 
                 size="lg" 
-                className="text-xl px-12 py-8 bg-white text-purple-600 hover:bg-gray-100 font-bold shadow-2xl"
+                className="text-base md:text-xl px-8 md:px-12 py-6 md:py-8 bg-white text-purple-600 hover:bg-gray-100 font-bold shadow-2xl"
                 onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
+                aria-label="Создать видео бесплатно в Telegram-боте"
               >
-                <Icon name="Sparkles" size={24} className="mr-2" />
+                <Icon name="Sparkles" size={20} className="mr-2" />
                 Создать видео бесплатно
               </Button>
-            </div>
+            </section>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
 
-      <footer className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white mt-20 border-t border-purple-800/30">
-        <div className="container max-w-6xl mx-auto px-4 py-12">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+      <footer className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white mt-12 md:mt-20 border-t border-purple-800/30" role="contentinfo">
+        <div className="container max-w-6xl mx-auto px-4 py-8 md:py-12">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                 SORA
               </h3>
               <p className="text-gray-300 text-sm leading-relaxed">
