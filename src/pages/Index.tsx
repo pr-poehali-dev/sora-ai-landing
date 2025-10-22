@@ -578,6 +578,123 @@ const Index = () => {
               🤖 Перейти в Telegram-бот
             </Button>
           </div>
+
+          <h2 className="text-3xl font-bold mb-6 mt-12">
+            Альтернативы и аналоги Sora
+          </h2>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            Хотя Sora — лидер в генерации видео, на рынке существуют достойные альтернативы.
+          </p>
+
+          <h3 className="text-2xl font-semibold mb-6 mt-8">
+            Сравнение с Runway ML, Pika Labs, Synthesia
+          </h3>
+
+          <div className="space-y-6 mb-8">
+            <div className="bg-card rounded-lg p-6 border hover:border-primary/50 transition-colors">
+              <h4 className="text-xl font-bold mb-3">Runway Gen-3 / Gen-4</h4>
+              <div className="grid md:grid-cols-2 gap-3 text-muted-foreground">
+                <p><strong>Качество:</strong> Высокое, близкое к Sora</p>
+                <p><strong>Длительность:</strong> До 18 секунд</p>
+                <p><strong>Цена:</strong> От $12/месяц</p>
+                <p><strong>Доступность:</strong> Широкая география, включая Россию</p>
+              </div>
+              <p className="mt-3 text-muted-foreground"><strong>Особенности:</strong> Отличная работа с редактированием существующего видео, инструменты для профессионалов</p>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 border hover:border-primary/50 transition-colors">
+              <h4 className="text-xl font-bold mb-3">Pika Labs</h4>
+              <div className="grid md:grid-cols-2 gap-3 text-muted-foreground">
+                <p><strong>Качество:</strong> Среднее-высокое</p>
+                <p><strong>Длительность:</strong> До 3-4 секунд</p>
+                <p><strong>Цена:</strong> Бесплатная версия + премиум от $10/месяц</p>
+                <p><strong>Доступность:</strong> Глобальная</p>
+              </div>
+              <p className="mt-3 text-muted-foreground"><strong>Особенности:</strong> Быстрая генерация, простой интерфейс, активное сообщество Discord</p>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 border hover:border-primary/50 transition-colors">
+              <h4 className="text-xl font-bold mb-3">Kling AI</h4>
+              <div className="grid md:grid-cols-2 gap-3 text-muted-foreground">
+                <p><strong>Качество:</strong> Высокое, особенно для азиатской аудитории</p>
+                <p><strong>Длительность:</strong> До 10 секунд</p>
+                <p><strong>Цена:</strong> Бесплатная версия с лимитами</p>
+                <p><strong>Доступность:</strong> Глобальная</p>
+              </div>
+              <p className="mt-3 text-muted-foreground"><strong>Особенности:</strong> Отлично работает с анимацией и фэнтези-контентом</p>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 border hover:border-primary/50 transition-colors">
+              <h4 className="text-xl font-bold mb-3">Google Veo 3</h4>
+              <div className="grid md:grid-cols-2 gap-3 text-muted-foreground">
+                <p><strong>Качество:</strong> Очень высокое, конкурент Sora</p>
+                <p><strong>Длительность:</strong> До 8 секунд</p>
+                <p><strong>Цена:</strong> Интегрирован в Google Cloud (платный доступ)</p>
+                <p><strong>Доступность:</strong> Через Google Cloud</p>
+              </div>
+              <p className="mt-3 text-muted-foreground"><strong>Особенности:</strong> Превосходная физика и реализм</p>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 border hover:border-primary/50 transition-colors">
+              <h4 className="text-xl font-bold mb-3">Synthesia</h4>
+              <div className="grid md:grid-cols-2 gap-3 text-muted-foreground">
+                <p><strong>Качество:</strong> Среднее (фокус на аватары, а не на кинематографическое видео)</p>
+                <p><strong>Длительность:</strong> Неограниченная для говорящих аватаров</p>
+                <p><strong>Цена:</strong> От $30/месяц</p>
+                <p><strong>Доступность:</strong> Глобальная</p>
+              </div>
+              <p className="mt-3 text-muted-foreground"><strong>Особенности:</strong> Создание видео с AI-аватарами для презентаций и обучения</p>
+            </div>
+          </div>
+
+          <h3 className="text-2xl font-semibold mb-4 mt-8">
+            Преимущества Sora
+          </h3>
+
+          <div className="grid md:grid-cols-2 gap-4 mb-12">
+            <div className="bg-gradient-to-br from-violet-50 to-purple-50 dark:from-violet-950/20 dark:to-purple-950/20 rounded-lg p-5 border border-violet-200 dark:border-violet-800">
+              <h4 className="font-semibold text-lg mb-2">🏆 Непревзойденное качество:</h4>
+              <p className="text-muted-foreground text-sm">
+                Sora генерирует самые реалистичные и детализированные видео на рынке.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 rounded-lg p-5 border border-blue-200 dark:border-blue-800">
+              <h4 className="font-semibold text-lg mb-2">⏱️ Длительные ролики:</h4>
+              <p className="text-muted-foreground text-sm">
+                До 20 секунд в одной генерации — это больше, чем у большинства конкурентов.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 rounded-lg p-5 border border-green-200 dark:border-green-800">
+              <h4 className="font-semibold text-lg mb-2">🎯 Точное следование промпту:</h4>
+              <p className="text-muted-foreground text-sm">
+                Sora лучше других понимает сложные описания и передает нюансы.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/20 dark:to-orange-950/20 rounded-lg p-5 border border-amber-200 dark:border-amber-800">
+              <h4 className="font-semibold text-lg mb-2">🔊 Звуковое сопровождение:</h4>
+              <p className="text-muted-foreground text-sm">
+                Sora 2 автоматически генерирует звук, что делает видео еще более реалистичным.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-pink-50 to-rose-50 dark:from-pink-950/20 dark:to-rose-950/20 rounded-lg p-5 border border-pink-200 dark:border-pink-800">
+              <h4 className="font-semibold text-lg mb-2">🔗 Экосистема OpenAI:</h4>
+              <p className="text-muted-foreground text-sm">
+                Интеграция с ChatGPT, возможность использовать GPT для генерации промптов.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/20 dark:to-purple-950/20 rounded-lg p-5 border border-indigo-200 dark:border-indigo-800">
+              <h4 className="font-semibold text-lg mb-2">👥 Активное сообщество:</h4>
+              <p className="text-muted-foreground text-sm">
+                Огромное количество пользователей, обмен опытом, обучающие материалы.
+              </p>
+            </div>
+          </div>
         </article>
       </div>
     </div>
