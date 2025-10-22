@@ -27,20 +27,31 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b">
         <div className="container max-w-6xl mx-auto px-4 py-3">
-          <div className="flex items-center gap-2 overflow-x-auto">
-            {menuItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
-                  activeSection === item.id
-                    ? "bg-primary text-primary-foreground"
-                    : "hover:bg-muted"
-                }`}
-              >
-                {item.label}
-              </button>
-            ))}
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-3 mr-4">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg blur-sm opacity-75"></div>
+                <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 px-4 py-2 rounded-lg">
+                  <span className="text-2xl font-bold text-white tracking-tight">SORA</span>
+                </div>
+              </div>
+              <div className="hidden sm:block h-6 w-px bg-border"></div>
+            </div>
+            <div className="flex items-center gap-2 overflow-x-auto flex-1">
+              {menuItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
+                    activeSection === item.id
+                      ? "bg-primary text-primary-foreground"
+                      : "hover:bg-muted"
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </nav>
