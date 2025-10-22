@@ -172,10 +172,10 @@ const Index = () => {
               <article className="flex items-start gap-3 md:gap-4 bg-pink-500/10 border border-pink-500/30 rounded-xl md:rounded-2xl p-4 md:p-6">
                 <Icon name="Check" size={20} className="text-pink-400 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-1">Поддержка 24/7</h3>
-                  <p className="text-gray-300">Наша команда всегда на связи</p>
+                  <h3 className="text-base md:text-lg font-semibold text-white mb-1">Поддержка 24/7</h3>
+                  <p className="text-sm md:text-base text-gray-300">Наша команда всегда на связи</p>
                 </div>
-              </div>
+              </article>
             </div>
             
             <div className="flex justify-center">
