@@ -125,14 +125,22 @@ const Index = () => {
             
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-3xl blur-3xl"></div>
-              <img 
-                src="https://cdn.poehali.dev/projects/b1f66519-dfea-4ee9-aa2d-976d6e3fc70c/files/0ba38426-a80d-4b47-9bb0-9a8278b9bbbc.jpg"
-                alt="Пример видео, созданного нейросетью Sora 2 от OpenAI - реалистичная генерация из текста"
-                className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-2xl md:rounded-3xl shadow-2xl border border-purple-500/30"
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
-              />
+              <picture>
+                <source 
+                  srcSet="https://cdn.poehali.dev/projects/b1f66519-dfea-4ee9-aa2d-976d6e3fc70c/files/0ba38426-a80d-4b47-9bb0-9a8278b9bbbc.jpg?format=webp" 
+                  type="image/webp"
+                />
+                <img 
+                  src="https://cdn.poehali.dev/projects/b1f66519-dfea-4ee9-aa2d-976d6e3fc70c/files/0ba38426-a80d-4b47-9bb0-9a8278b9bbbc.jpg"
+                  alt="Пример видео, созданного нейросетью Sora 2 от OpenAI - реалистичная генерация из текста"
+                  className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-2xl md:rounded-3xl shadow-2xl border border-purple-500/30"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  width="1920"
+                  height="1080"
+                />
+              </picture>
             </div>
           </div>
 
