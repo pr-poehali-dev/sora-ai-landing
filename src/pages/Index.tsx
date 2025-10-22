@@ -46,6 +46,26 @@ const Index = () => {
       </nav>
 
       <div className="container max-w-4xl mx-auto px-4 py-12">
+        <div className="relative w-full h-[400px] rounded-3xl overflow-hidden mb-12 shadow-2xl">
+          <img 
+            src="https://cdn.poehali.dev/projects/b1f66519-dfea-4ee9-aa2d-976d6e3fc70c/files/0ba38426-a80d-4b47-9bb0-9a8278b9bbbc.jpg"
+            alt="Sora AI Video Generation"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+          <div className="absolute bottom-8 left-8 right-8 text-white">
+            <div className="inline-block bg-purple-600/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-3">
+              ✨ Новинка 2025
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
+              Sora AI
+            </h1>
+            <p className="text-xl md:text-2xl mt-2 text-purple-100">
+              Создавайте видео из текста за минуты
+            </p>
+          </div>
+        </div>
+
         <article className="prose prose-lg max-w-none">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
             Sora — нейросеть для создания видео от OpenAI: как получить доступ и пользоваться
