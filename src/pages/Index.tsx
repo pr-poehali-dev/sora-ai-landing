@@ -504,6 +504,71 @@ const Index = () => {
             Если у вас возникают проблемы с установкой официального приложения Sora (недоступен регион, нет инвайт-кода, сложности с VPN), есть более простое решение — используйте наш Telegram-бот.
           </p>
 
+          <div className="mb-8">
+            <h4 className="text-xl font-semibold mb-4">Почему это удобнее:</h4>
+            
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-gradient-to-r from-purple-100 to-blue-100 dark:from-purple-900/30 dark:to-blue-900/30">
+                    <th className="border border-gray-300 dark:border-gray-700 p-4 text-left font-semibold">Официальное приложение Sora</th>
+                    <th className="border border-gray-300 dark:border-gray-700 p-4 text-left font-semibold">Наш Telegram-бот</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-700 p-4 bg-red-50 dark:bg-red-950/10">
+                      <span className="text-red-600 dark:text-red-400">✗</span> Требуется инвайт-код
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-700 p-4 bg-green-50 dark:bg-green-950/10">
+                      <span className="text-green-600 dark:text-green-400">✓</span> Не требуется инвайт-код
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-700 p-4 bg-red-50 dark:bg-red-950/10">
+                      <span className="text-red-600 dark:text-red-400">✗</span> Работает только в США/Канаде
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-700 p-4 bg-green-50 dark:bg-green-950/10">
+                      <span className="text-green-600 dark:text-green-400">✓</span> Работает в любой стране
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-700 p-4 bg-red-50 dark:bg-red-950/10">
+                      <span className="text-red-600 dark:text-red-400">✗</span> Нужен VPN
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-700 p-4 bg-green-50 dark:bg-green-950/10">
+                      <span className="text-green-600 dark:text-green-400">✓</span> VPN не нужен
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-700 p-4 bg-red-50 dark:bg-red-950/10">
+                      <span className="text-red-600 dark:text-red-400">✗</span> Регистрация через OpenAI
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-700 p-4 bg-green-50 dark:bg-green-950/10">
+                      <span className="text-green-600 dark:text-green-400">✓</span> Быстрый вход через Telegram
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-700 p-4 bg-red-50 dark:bg-red-950/10">
+                      <span className="text-red-600 dark:text-red-400">✗</span> Ограничения для бесплатных пользователей
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-700 p-4 bg-green-50 dark:bg-green-950/10">
+                      <span className="text-green-600 dark:text-green-400">✓</span> Больше бесплатных генераций
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 dark:border-gray-700 p-4 bg-red-50 dark:bg-red-950/10">
+                      <span className="text-red-600 dark:text-red-400">✗</span> iOS 18.0+ / Android 7.1+
+                    </td>
+                    <td className="border border-gray-300 dark:border-gray-700 p-4 bg-green-50 dark:bg-green-950/10">
+                      <span className="text-green-600 dark:text-green-400">✓</span> Любое устройство с Telegram
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
           <div className="flex justify-center mb-12">
             <Button 
               size="lg" 
