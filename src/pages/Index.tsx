@@ -696,7 +696,8 @@ const Index = () => {
               </Button>
             </section>
           </div>
-        </section>
+        </div>
+      </section>
       </main>
 
       <footer className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white mt-12 md:mt-20 border-t border-purple-800/30" role="contentinfo">
