@@ -495,6 +495,37 @@ const Index = () => {
               </div>
             </section>
 
+            <section className="scroll-mt-20 mb-20">
+              <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                Заключение
+              </h2>
+              
+              <div className="bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-sm border border-purple-500/30 rounded-3xl p-8 md:p-12 space-y-6">
+                <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
+                  Нейросеть Sora от OpenAI — это революционная технология, которая делает создание профессиональных видео доступным каждому. 
+                  Теперь вам не нужны дорогие камеры, актеры или монтажеры — достаточно текстового описания, и искусственный интеллект 
+                  создаст реалистичное видео за считанные минуты.
+                </p>
+                
+                <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
+                  С выходом Sora 2 в 2025 году возможности стали еще шире: видео до 20 секунд, разрешение 1080p, автоматическая генерация 
+                  звука и продвинутые инструменты редактирования. Это мощный инструмент для маркетологов, блогеров, режиссеров, 
+                  предпринимателей и всех, кто хочет создавать уникальный визуальный контент.
+                </p>
+                
+                <div className="pt-4">
+                  <Button 
+                    size="lg" 
+                    className="text-lg px-10 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-xl"
+                    onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
+                  >
+                    <Icon name="Rocket" size={20} className="mr-2" />
+                    Начать создавать видео
+                  </Button>
+                </div>
+              </div>
+            </section>
+
             <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-12 text-center">
               <h2 className="text-4xl font-bold mb-4">Готовы создать своё первое видео?</h2>
               <p className="text-xl mb-8 text-purple-100">Начните прямо сейчас — это быстро и бесплатно</p>
