@@ -695,6 +695,100 @@ const Index = () => {
               </p>
             </div>
           </div>
+
+          <h2 className="text-3xl font-bold mb-6 mt-12">
+            Почему наш сервис — лучший способ получить доступ к Sora
+          </h2>
+
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            На рынке существует множество сервисов, предлагающих инвайт-коды для Sora. Почему стоит выбрать именно нас?
+          </p>
+
+          <div className="space-y-6 mb-10">
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20 rounded-xl p-6 border-l-4 border-green-500">
+              <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                <span className="text-2xl">✅</span> Гарантированный результат
+              </h3>
+              <p className="text-muted-foreground">
+                Мы работаем напрямую с официальными партнерами OpenAI и гарантируем, что каждый код работает. Никаких подделок или уже использованных кодов.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 rounded-xl p-6 border-l-4 border-blue-500">
+              <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                <span className="text-2xl">⚡</span> Мгновенная доставка
+              </h3>
+              <p className="text-muted-foreground">
+                Среднее время получения кода — 3-5 минут. Не нужно ждать днями в очереди или искать коды на форумах.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-purple-50 to-violet-50 dark:from-purple-950/20 dark:to-violet-950/20 rounded-xl p-6 border-l-4 border-purple-500">
+              <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                <span className="text-2xl">🔒</span> Безопасность
+              </h3>
+              <p className="text-muted-foreground">
+                Все коды легальны. Мы не предлагаем взломанные версии или сомнительные обходные пути. Ваш аккаунт OpenAI останется в безопасности.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950/20 dark:to-orange-950/20 rounded-xl p-6 border-l-4 border-amber-500">
+              <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                <span className="text-2xl">💰</span> Прозрачные цены
+              </h3>
+              <ul className="text-muted-foreground space-y-1">
+                <li>• Первые 3 генерации — <strong>бесплатно</strong></li>
+                <li>• Далее от <strong>99 рублей за 10 видео</strong></li>
+                <li>• Премиум-подписка от <strong>590 рублей/месяц</strong> (безлимит)</li>
+              </ul>
+            </div>
+
+            <div className="bg-gradient-to-r from-pink-50 to-rose-50 dark:from-pink-950/20 dark:to-rose-950/20 rounded-xl p-6 border-l-4 border-pink-500">
+              <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                <span className="text-2xl">🎁</span> Бонусы и акции
+              </h3>
+              <p className="text-muted-foreground">
+                Мы регулярно проводим розыгрыши, раздаем промокоды и поощряем активных пользователей. Присоединяйтесь к нашему сообществу и получайте больше бесплатно!
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-950/20 dark:to-blue-950/20 rounded-xl p-6 border-l-4 border-indigo-500">
+              <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                <span className="text-2xl">📱</span> Удобство использования
+              </h3>
+              <p className="text-muted-foreground">
+                Наш Telegram-бот — это самый простой способ создавать видео с помощью Sora. Без сложных настроек, VPN и технических знаний. Просто напишите текст — и получите видео.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-950/20 dark:to-orange-950/20 rounded-xl p-6 border-l-4 border-red-500">
+              <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                <span className="text-2xl">🇷🇺</span> Полная поддержка русского языка
+              </h3>
+              <p className="text-muted-foreground">
+                В отличие от официального интерфейса Sora (только английский), наш бот полностью на русском языке. Интуитивно понятный интерфейс, подсказки и примеры промптов.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-950/20 dark:to-cyan-950/20 rounded-xl p-6 border-l-4 border-teal-500">
+              <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                <span className="text-2xl">💬</span> Живая поддержка
+              </h3>
+              <p className="text-muted-foreground">
+                Наша команда на связи 24/7. Возникли вопросы? Нужна помощь с настройкой? Пишите в @YourSupportBot — ответим в течение 5 минут.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-center mb-12">
+            <Button 
+              size="lg" 
+              className="text-lg px-10 py-7 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-lg"
+              onClick={() => window.open('https://t.me/your_bot', '_blank')}
+            >
+              🚀 Получить доступ к Sora прямо сейчас
+            </Button>
+          </div>
         </article>
       </div>
     </div>
