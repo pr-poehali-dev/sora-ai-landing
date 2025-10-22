@@ -789,6 +789,101 @@ const Index = () => {
               🚀 Получить доступ к Sora прямо сейчас
             </Button>
           </div>
+
+          <h2 className="text-3xl font-bold mb-8 mt-16">
+            FAQ
+          </h2>
+
+          <div className="space-y-6 mb-12">
+            <div className="bg-card rounded-lg p-6 border shadow-sm">
+              <h3 className="text-xl font-bold mb-3">Безопасно ли использовать ваш сервис?</h3>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                Абсолютно безопасно. Мы не запрашиваем ваш пароль от OpenAI и не требуем доступа к вашему аккаунту. Вы получаете только инвайт-код, который вводите самостоятельно на официальном сайте Sora.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Наш Telegram-бот использует официальное API и полностью соответствует правилам OpenAI.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 border shadow-sm">
+              <h3 className="text-xl font-bold mb-3">Работает ли ваш сервис в России?</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Да! В отличие от официального приложения Sora, наш Telegram-бот работает в России и любой другой стране без VPN. Это одно из главных преимуществ нашего сервиса.
+              </p>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 border shadow-sm">
+              <h3 className="text-xl font-bold mb-4">Чем ваш Telegram-бот отличается от официального сайта Sora?</h3>
+              
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-gradient-to-r from-purple-100 to-blue-100 dark:from-purple-900/30 dark:to-blue-900/30">
+                      <th className="border border-gray-300 dark:border-gray-700 p-3 text-left font-semibold">Параметр</th>
+                      <th className="border border-gray-300 dark:border-gray-700 p-3 text-left font-semibold">Официальный Sora</th>
+                      <th className="border border-gray-300 dark:border-gray-700 p-3 text-left font-semibold">Наш Telegram-бот</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 font-medium">Нужен инвайт-код</td>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 bg-red-50 dark:bg-red-950/10">
+                        <span className="text-red-600 dark:text-red-400">Да</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 bg-green-50 dark:bg-green-950/10">
+                        <span className="text-green-600 dark:text-green-400">Нет</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 font-medium">Работает в России</td>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 bg-red-50 dark:bg-red-950/10">
+                        <span className="text-red-600 dark:text-red-400">Нет (нужен VPN)</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 bg-green-50 dark:bg-green-950/10">
+                        <span className="text-green-600 dark:text-green-400">Да (без VPN)</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 font-medium">Интерфейс</td>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 bg-red-50 dark:bg-red-950/10">
+                        <span className="text-red-600 dark:text-red-400">Английский</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 bg-green-50 dark:bg-green-950/10">
+                        <span className="text-green-600 dark:text-green-400">Русский</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 font-medium">Первые генерации</td>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 bg-red-50 dark:bg-red-950/10">
+                        <span className="text-red-600 dark:text-red-400">Ограничены</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 bg-green-50 dark:bg-green-950/10">
+                        <span className="text-green-600 dark:text-green-400">3 бесплатно</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 font-medium">Поддержка</td>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 bg-red-50 dark:bg-red-950/10">
+                        <span className="text-red-600 dark:text-red-400">Email (медленно)</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 bg-green-50 dark:bg-green-950/10">
+                        <span className="text-green-600 dark:text-green-400">Telegram 24/7</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 font-medium">Удобство</td>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 bg-red-50 dark:bg-red-950/10">
+                        <span className="text-red-600 dark:text-red-400">Веб-сайт/приложение</span>
+                      </td>
+                      <td className="border border-gray-300 dark:border-gray-700 p-3 bg-green-50 dark:bg-green-950/10">
+                        <span className="text-green-600 dark:text-green-400">Прямо в мессенджере</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </article>
       </div>
     </div>
