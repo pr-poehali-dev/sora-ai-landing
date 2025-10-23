@@ -84,22 +84,23 @@ const Index = () => {
                 </p>
               
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                <Button 
-                  size="lg" 
-                  className="text-base md:text-lg px-6 md:px-8 py-5 md:py-7 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-xl shadow-purple-500/30 font-semibold"
-                  onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
+                <a 
+                  href="https://t.me/syntxaibot?start=aff_797685317"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  className="inline-flex items-center justify-center text-base md:text-lg px-6 md:px-8 py-5 md:py-7 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-xl shadow-purple-500/30 font-semibold rounded-md transition-colors"
                   aria-label="Начать создавать видео бесплатно"
                 >
                   <Icon name="Sparkles" size={18} className="mr-2" />
                   Начать бесплатно
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="text-base md:text-lg px-6 md:px-8 py-5 md:py-7 border-2 border-purple-500/50 text-white hover:bg-purple-900/30 font-semibold"
-                  onClick={() => window.open('https://syntx.ai/welcome/1bQ2wH8v', '_blank')}
+                </a>
+                <a 
+                  href="https://syntx.ai/welcome/1bQ2wH8v"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  className="inline-flex items-center justify-center text-base md:text-lg px-6 md:px-8 py-5 md:py-7 border-2 border-purple-500/50 text-white hover:bg-purple-900/30 font-semibold rounded-md transition-colors"
                   aria-label="Перейти на официальный сайт"
-                >Попробовать на сайте</Button>
+                >Попробовать на сайте</a>
               </div>
               
               <div className="flex items-center gap-4 md:gap-8 pt-4">
@@ -309,13 +310,14 @@ const Index = () => {
                       <p className="text-gray-300 mb-4">
                         Зарегистрируйтесь на сайте и получите доступ через подписку Plus или Pro. Оплата картами РФ.
                       </p>
-                      <Button 
-                        variant="outline"
-                        className="border-purple-500/50 text-white hover:bg-purple-900/30"
-                        onClick={() => window.open('https://syntx.ai/welcome/1bQ2wH8v', '_blank')}
+                      <a 
+                        href="https://syntx.ai/welcome/1bQ2wH8v"
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        className="inline-flex items-center justify-center border-purple-500/50 text-white hover:bg-purple-900/30 border rounded-md px-4 py-2 text-sm font-medium transition-colors"
                       >
                         Перейти на сайт
-                      </Button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -329,13 +331,15 @@ const Index = () => {
                         Самый простой способ: без VPN, без сложных настроек, с поддержкой на русском языке.
                         Первые генерации бесплатно!
                       </p>
-                      <Button 
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
-                        onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
+                      <a 
+                        href="https://t.me/syntxaibot?start=aff_797685317"
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-md px-4 py-2 text-sm font-medium transition-colors"
                       >
                         <Icon name="MessageCircle" size={20} className="mr-2" />
                         Открыть бот
-                      </Button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -676,14 +680,15 @@ const Index = () => {
                 </p>
                 
                 <div className="pt-4">
-                  <Button 
-                    size="lg" 
-                    className="text-lg px-10 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-xl"
-                    onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
+                  <a 
+                    href="https://t.me/syntxaibot?start=aff_797685317"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className="inline-flex items-center justify-center text-lg px-10 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-xl rounded-md font-medium transition-colors"
                   >
                     <Icon name="Rocket" size={20} className="mr-2" />
                     Начать создавать видео
-                  </Button>
+                  </a>
                 </div>
               </div>
             </section>
@@ -691,15 +696,16 @@ const Index = () => {
             <section className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl md:rounded-3xl p-6 md:p-12 text-center" aria-label="Призыв к действию">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">Готовы создать своё первое видео?</h2>
               <p className="text-base md:text-xl mb-6 md:mb-8 text-purple-100">Начните прямо сейчас — это быстро и бесплатно</p>
-              <Button 
-                size="lg" 
-                className="text-base md:text-xl px-8 md:px-12 py-6 md:py-8 bg-white text-purple-600 hover:bg-gray-100 font-bold shadow-2xl"
-                onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
+              <a 
+                href="https://t.me/syntxaibot?start=aff_797685317"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="inline-flex items-center justify-center text-base md:text-xl px-8 md:px-12 py-6 md:py-8 bg-white text-purple-600 hover:bg-gray-100 font-bold shadow-2xl rounded-md transition-colors"
                 aria-label="Создать видео бесплатно в Telegram-боте"
               >
                 <Icon name="Sparkles" size={20} className="mr-2" />
                 Создать видео бесплатно
-              </Button>
+              </a>
             </section>
           </div>
         </div>
