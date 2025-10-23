@@ -87,7 +87,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   className="text-base md:text-lg px-6 md:px-8 py-5 md:py-7 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-xl shadow-purple-500/30 font-semibold"
-                  onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
+                  onClick={() => window.open('https://t.me/syntxaibot', '_blank')}
                   aria-label="Начать создавать видео бесплатно"
                 >
                   <Icon name="Sparkles" size={18} className="mr-2" />
@@ -97,7 +97,7 @@ const Index = () => {
                   size="lg" 
                   variant="outline"
                   className="text-base md:text-lg px-6 md:px-8 py-5 md:py-7 border-2 border-purple-500/50 text-white hover:bg-purple-900/30 font-semibold"
-                  onClick={() => window.open('https://syntx.ai/welcome/1bQ2wH8v', '_blank')}
+                  onClick={() => window.open('https://syntx.ai', '_blank')}
                   aria-label="Перейти на официальный сайт"
                 >Попробовать на сайте</Button>
               </div>
@@ -189,7 +189,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="text-base md:text-xl px-8 md:px-12 py-6 md:py-8 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-2xl shadow-purple-500/40"
-                onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
+                onClick={() => window.open('https://t.me/syntxaibot', '_blank')}
               >
                 <Icon name="Sparkles" size={20} className="mr-2" />
                 Получить доступ к Sora 2
@@ -312,7 +312,7 @@ const Index = () => {
                       <Button 
                         variant="outline"
                         className="border-purple-500/50 text-white hover:bg-purple-900/30"
-                        onClick={() => window.open('https://syntx.ai/welcome/1bQ2wH8v', '_blank')}
+                        onClick={() => window.open('https://syntx.ai', '_blank')}
                       >
                         Перейти на сайт
                       </Button>
@@ -331,7 +331,7 @@ const Index = () => {
                       </p>
                       <Button 
                         className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
-                        onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
+                        onClick={() => window.open('https://t.me/syntxaibot', '_blank')}
                       >
                         <Icon name="MessageCircle" size={20} className="mr-2" />
                         Открыть бот
@@ -679,7 +679,7 @@ const Index = () => {
                   <Button 
                     size="lg" 
                     className="text-lg px-10 py-6 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-xl"
-                    onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
+                    onClick={() => window.open('https://t.me/syntxaibot', '_blank')}
                   >
                     <Icon name="Rocket" size={20} className="mr-2" />
                     Начать создавать видео
@@ -694,7 +694,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="text-base md:text-xl px-8 md:px-12 py-6 md:py-8 bg-white text-purple-600 hover:bg-gray-100 font-bold shadow-2xl"
-                onClick={() => window.open('https://t.me/syntxaibot?start=aff_797685317', '_blank')}
+                onClick={() => window.open('https://t.me/syntxaibot', '_blank')}
                 aria-label="Создать видео бесплатно в Telegram-боте"
               >
                 <Icon name="Sparkles" size={20} className="mr-2" />
@@ -761,7 +761,7 @@ const Index = () => {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a 
-                    href="https://t.me/syntxaibot?start=aff_797685317" 
+                    href="https://t.me/syntxaibot" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-gray-300 hover:text-white transition-colors"
@@ -771,7 +771,7 @@ const Index = () => {
                 </li>
                 <li>
                   <a 
-                    href="https://syntx.ai/welcome/1bQ2wH8v" 
+                    href="https://syntx.ai" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-gray-300 hover:text-white transition-colors"
